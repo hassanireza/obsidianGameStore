@@ -10,6 +10,7 @@ A premium browser gaming platform built with Django, delivering a modern Apple i
 
 <p align="center">
 
+[![CI](https://img.shields.io/github/actions/workflow/status/hassanireza/obsidianGameClub/ci.yml?style=for-the-badge&logo=githubactions&logoColor=white&label=CI)](https://github.com/hassanireza/obsidianGameClub/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-Framework-092E20?style=for-the-badge&logo=django)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
