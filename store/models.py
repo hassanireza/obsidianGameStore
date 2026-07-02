@@ -33,12 +33,17 @@ class Game(models.Model):
     color_from = models.CharField(max_length=20, default='#7C5CFF')
     color_to = models.CharField(max_length=20, default='#00CFFF')
     # Asset paths relative to games_static root
-    thumbnail = models.CharField(max_length=500, blank=True,
-        help_text='Path relative to games_static, e.g. nightCityDivination/assets/banner.webp')
+    thumbnail = models.CharField(
+        max_length=500, blank=True,
+        help_text='Path relative to games_static, e.g. nightCityDivination/assets/banner.webp'
+    )
+
     banner = models.CharField(max_length=500, blank=True)
     # The game entry point
-    game_folder = models.CharField(max_length=300,
-        help_text='Path relative to games_static root, e.g. nightCityDivination')
+    game_folder = models.CharField(
+        max_length=300,
+        help_text='Path relative to games_static root, e.g. nightCityDivination'
+    )
     game_entry = models.CharField(max_length=100, default='index.html')
     release_date = models.DateField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
