@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          pip install flake8 pytest
+          pip install flake8 pytest pytest-django
       - name: Lint
         run: flake8 . --max-line-length=120 --exclude=migrations
       - name: Run tests
