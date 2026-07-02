@@ -4,7 +4,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .forms import SignupForm
-from .models import UserProfile, Wishlist, Library
+from .models import UserProfile
 
 
 def signup_view(request):
