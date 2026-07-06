@@ -3,6 +3,7 @@ import type { Game } from "../types";
 import { useAuth } from "../lib/auth";
 import { IconHeart, IconHeartFilled, IconStar } from "./icons";
 import { GENRES } from "../data/genres";
+import { handleCoverError } from "../lib/imageFallback";
 import "./gameCard.css";
 
 interface GameCardProps {
@@ -17,7 +18,12 @@ export default function GameCard({ game }: GameCardProps) {
   return (
     <article className="game-card">
       <Link to={`/games/${game.slug}`} className="game-card__media">
-        <img src={game.thumbnail} alt={game.name} loading="lazy" />
+        <img
+          src={game.thumbnail}
+          alt={game.name}
+          loading="lazy"
+          onError={handleCoverError}
+        />
         <button
           className="game-card__wish"
           aria-label="Toggle wishlist"
