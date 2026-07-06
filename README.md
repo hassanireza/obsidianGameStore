@@ -28,50 +28,19 @@ static single page app to GitHub Pages.
 
 ## What changed from the old Django app
 
-<table>
-<tr>
-<td width="28" valign="top"><img src="https://raw.githubusercontent.com/hassanireza/obsidianGameStore/main/docs/readme/icon-rebuild.svg" width="20" height="20" /></td>
-<td>
-<strong>Full rebuild in React 19, TypeScript, and Vite.</strong> No backend required.
-</td>
-</tr>
-<tr>
-<td valign="top"><img src="https://raw.githubusercontent.com/hassanireza/obsidianGameStore/main/docs/readme/icon-design.svg" width="20" height="20" /></td>
-<td>
-<strong>Design system rewritten</strong> to a near black, museum catalog aesthetic: serif display type, thin sans body copy, no saturated color, slow critically damped scroll reveals, and a subtle film grain overlay.
-</td>
-</tr>
-<tr>
-<td valign="top"><img src="https://raw.githubusercontent.com/hassanireza/obsidianGameStore/main/docs/readme/icon-genres.svg" width="20" height="20" /></td>
-<td>
-Name corrected from "Obsidian Game Club" to <strong>Obsidian Game Store</strong>. Genres reduced from nine to seven: Chess and Puzzle and Strategy now share one shelf, "Puzzle & Strategy", since they were the same kind of thinking game.
-</td>
-</tr>
-<tr>
-<td valign="top"><img src="https://raw.githubusercontent.com/hassanireza/obsidianGameStore/main/docs/readme/icon-categories.svg" width="20" height="20" /></td>
-<td>
-<strong>New, Trending, Featured, and Editors Choice</strong> are no longer flags an admin flips. They are computed in <code>src/lib/categories.ts</code> from real fields: release date recency, play count, rating, and review volume. Not every game qualifies for every shelf.
-</td>
-</tr>
-<tr>
-<td valign="top"><img src="https://raw.githubusercontent.com/hassanireza/obsidianGameStore/main/docs/readme/icon-linking.svg" width="20" height="20" /></td>
-<td>
-Games that live inside <code>pixelRealms</code> (Neon Blocks, Neural Grid, Tic Tac Toe) and <code>driftlineArcade</code> (Skyfold Aviary, VoidRunner) link straight to the specific game path on GitHub Pages, skipping each repo's own landing page. Every game card also links to its real GitHub source repository.
-</td>
-</tr>
-<tr>
-<td valign="top"><img src="https://raw.githubusercontent.com/hassanireza/obsidianGameStore/main/docs/readme/icon-auth.svg" width="20" height="20" /></td>
-<td>
-<strong>Sign in and sign up are a working demo only.</strong> There is no server: an email creates a session in <code>localStorage</code>, and library and wishlist state persist per browser. See <code>src/lib/auth.tsx</code>.
-</td>
-</tr>
-<tr>
-<td valign="top"><img src="https://raw.githubusercontent.com/hassanireza/obsidianGameStore/main/docs/readme/icon-untouched.svg" width="20" height="20" /></td>
-<td>
-Individual game logic and assets are untouched, exactly as requested, ready for you to upgrade repo by repo later. The store only supplies the shell, the cover art, and the linking.
-</td>
-</tr>
-</table>
+![](https://raw.githubusercontent.com/hassanireza/obsidianGameStore/main/docs/readme/icon-rebuild.svg) **Full rebuild in React 19, TypeScript, and Vite.** No backend required.
+
+![](https://raw.githubusercontent.com/hassanireza/obsidianGameStore/main/docs/readme/icon-design.svg) **Design system rewritten** to a near black, museum catalog aesthetic: serif display type, thin sans body copy, no saturated color, slow critically damped scroll reveals, and a subtle film grain overlay.
+
+![](https://raw.githubusercontent.com/hassanireza/obsidianGameStore/main/docs/readme/icon-genres.svg) Name corrected from "Obsidian Game Club" to **Obsidian Game Store**. Genres reduced from nine to seven: Chess and Puzzle and Strategy now share one shelf, "Puzzle & Strategy", since they were the same kind of thinking game.
+
+![](https://raw.githubusercontent.com/hassanireza/obsidianGameStore/main/docs/readme/icon-categories.svg) **New, Trending, Featured, and Editors Choice** are no longer flags an admin flips. They are computed in `src/lib/categories.ts` from real fields: release date recency, play count, rating, and review volume. Not every game qualifies for every shelf.
+
+![](https://raw.githubusercontent.com/hassanireza/obsidianGameStore/main/docs/readme/icon-linking.svg) Games that live inside `pixelRealms` (Neon Blocks, Neural Grid, Tic Tac Toe) and `driftlineArcade` (Skyfold Aviary, VoidRunner) link straight to the specific game path on GitHub Pages, skipping each repo's own landing page. Every game card also links to its real GitHub source repository.
+
+![](https://raw.githubusercontent.com/hassanireza/obsidianGameStore/main/docs/readme/icon-auth.svg) **Sign in and sign up are a working demo only.** There is no server: an email creates a session in `localStorage`, and library and wishlist state persist per browser. See `src/lib/auth.tsx`.
+
+![](https://raw.githubusercontent.com/hassanireza/obsidianGameStore/main/docs/readme/icon-untouched.svg) Individual game logic and assets are untouched, exactly as requested, ready for you to upgrade repo by repo later. The store only supplies the shell, the cover art, and the linking.
 
 <br/>
 
