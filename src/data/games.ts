@@ -173,8 +173,8 @@ export const GAMES: Game[] = [
     colorTo: "#16213e",
     thumbnail: `${import.meta.env.BASE_URL}covers/monarch-room.webp`,
     releaseDate: "2024-06-15",
-    repoUrl: repo("MonarchRoom"),
-    playUrl: pages("MonarchRoom"),
+    repoUrl: repo("monarchRoom"),
+    playUrl: pages("monarchRoom"),
     isEditorsChoice: true,
   },
   {
