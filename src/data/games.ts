@@ -7,6 +7,25 @@ const repo = (name: string) => `https://github.com/${GH_USER}/${name}`;
 
 export const GAMES: Game[] = [
   {
+    slug: "obsidian-break",
+    name: "Obsidian Break",
+    tagline: "A brick-breaking ritual of glass, gravity and quiet light.",
+    description:
+      "Ten chambers of falling glass and quiet gravity. Steer the paddle, angle every rebound, and let momentum carry your shards through obsidian walls that refuse to break. An AI assist can trace the ball's landing for you, or take the paddle entirely if you'd rather watch the chamber clear itself.",
+    genre: "classic",
+    developer: "Obsidian Originals",
+    plays: 0,
+    rating: 5,
+    reviewCount: 0,
+    colorFrom: "#12151c",
+    colorTo: "#e8e4da",
+    thumbnail: `${import.meta.env.BASE_URL}covers/obsidian-break.webp`,
+    releaseDate: "2026-07-24",
+    repoUrl: repo("obsidianBreak"),
+    playUrl: pages("obsidianBreak"),
+    isEditorsChoice: true,
+  },
+  {
     slug: "obelisk-drift",
     name: "Obelisk Drift",
     tagline: "Every stone remembers its fall.",
